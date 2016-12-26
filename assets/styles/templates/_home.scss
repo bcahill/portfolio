@@ -1,0 +1,38 @@
+#home {
+    max-width: 1400px;
+    width: 90%; 
+    margin: auto;
+
+    .inner-wrap{
+
+        #dot-1{
+            height: 100px;
+            width: 100px;
+            background: #5cb53e;
+            border-radius: 50%;
+        }
+
+        #dot-2{
+            height: 100px;
+            width: 100px;
+            background: #fbf420;
+            border-radius: 50%;
+        }
+
+        #dot-3{
+            height: 100px;
+            width: 100px;
+            background: #1450ab;
+            border-radius: 50%;
+        
+        }
+
+        #dot-4{
+            height: 100px; 
+            width: 100px;
+            background: red;
+            border-radius: 50%;
+        
+        }
+    }
+}
