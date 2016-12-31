@@ -28,9 +28,71 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
+        $(".type-header").typed({
+            strings: ["Hey there, I'm Bridget"],
+            typeSpeed: 10,
+            showCursor: false,
+            contentType: 'html',
+            onStringTyped: function() {          
+                $(".type-header2").typed({
+                    strings: ["I'm a web developer living in Chicago"],
+                    typeSpeed: 10,
+                    showCursor: false,
+                    contentType: 'html',
+                    onStringTyped: function() {
+                        $(".type-header3").typed({
+                            strings: ["I work at <a href='https://cliquestudios.com/' style='color: #f88601;'>Clique Studios</a> and build awesome sites"],
+                            typeSpeed: 10,
+                            showCursor: false,
+                            contentType: 'html',
+                            onStringTyped: function() {
+                                $(".type-header4").typed({
+                                    strings: [ "Take a look at some of <a href='/portfolio' style='color: red;'>my work</a> ..."],
+                                    typeSpeed: 10,
+                                    showCursor: false,
+                                    contentType: 'html',
+                                    onStringTyped: function() {
+
+                                        $(".type-header5").typed({
+                                            strings: [ "... or click <a href='/about' style='color: #5cb53e;'>here</a> to learn more about me!"],
+                                            typeSpeed: 10,
+                                            showCursor: false,
+                                            contentType: 'html',
+                                            onStringTyped: function() {
+                                                $(".type-header6").typed({
+                                                    strings: ["Anything else? Let <a href='/contact' style='color: #10418c;'>me</a> know "],
+                                                    typeSpeed: 10,
+                                                    showCursor: false,
+                                                    contentType: 'html',
+                                                });
+                                            },
+                                        });
+                                    },
+                                });
+                            },
+                        });
+                    },
+
+                });
+            },
+        });
+
+
+        document.querySelector( "#nav-toggle" )
+          .addEventListener( "click", function() {
+            this.classList.toggle( "active" );
+            $('.inner-nav').toggleClass('pizza');
+            $(".border-bottom").toggleClass('overlay-nav');
+          });
+        $('.dot').on("hover", function(){
+            $(this).toggleClass("grow");
+            $(".dot").toggleClass("taco");
+            $(".border-bottom").toggleClass('overlay');
+        }); 
       }
     },
     // About us page, note the change from about-us to about_us.

@@ -1,0 +1,80 @@
+        #dot-1{
+          display: block;
+          border-radius: 50%;
+          position: absolute;
+          -webkit-animation: moveX 13.05s linear 0s infinite alternate, moveY 17.4s linear 0s infinite alternate;
+          -moz-animation: moveX 13.05s linear 0s infinite alternate, moveY 17.4s linear 0s infinite alternate;
+          -o-animation: moveX 13.05s linear 0s infinite alternate, moveY 17.4s linear 0s infinite alternate;
+          animation: moveX 13.05s linear 0s infinite alternate, moveY 17.4s linear 0s infinite alternate;
+        }
+
+
+        #dot-2 {
+          display: block;
+          border-radius: 50%;
+          position: absolute;
+          -webkit-animation: moveX 22.1s linear 5s infinite alternate, moveY 9.4s linear 5s infinite alternate;
+          -moz-animation: moveX 22.1s linear 5s infinite alternate, moveY 9.4s linear 5s infinite alternate;
+          -o-animation: moveX 22.1s linear 5s infinite alternate, moveY 9.4s linear 5s infinite alternate;
+          animation: moveX 22.1s linear 5s infinite alternate, moveY 9.4s linear 5s infinite alternate;
+        }
+
+
+        #dot-3{
+          display: block;
+          border-radius: 50%;
+          position: absolute;
+          -webkit-animation: moveX 8.55s linear 3s infinite alternate, moveY 21.4s linear 3s infinite alternate;
+          -moz-animation: moveX 8.55s linear 3s infinite alternate, moveY 21.4s linear 3s infinite alternate;
+          -o-animation: moveX 8.55s linear 3s infinite alternate, moveY 21.4s linear 3s infinite alternate;
+          animation: moveX 8.55s linear 3s infinite alternate, moveY 21.4s linear 3s infinite alternate;
+        }
+
+        #dot-4 {
+          display: block;
+          border-radius: 50%;
+          position: absolute;
+          -webkit-animation: moveX 10.05s linear 1s infinite alternate, moveY 10.4s linear 1s infinite alternate;
+          -moz-animation: moveX 10.05s linear 1s infinite alternate, moveY 10.4s linear 1s infinite alternate;
+          -o-animation: moveX 10.05s linear 1s infinite alternate, moveY 10.4s linear 1s infinite alternate;
+          animation: moveX 10.05s linear 1s infinite alternate, moveY 10.4s linear 1s infinite alternate;
+        }
+
+        @-webkit-keyframes moveX {
+          from { left: 0; } to { left: 100%; }
+        }
+        @-moz-keyframes moveX {
+          from { left: 0; } to { left: 100%; }
+        }
+        @-o-keyframes moveX {
+          from { left: 0; } to { left: 100%; }
+        }
+        @keyframes moveX {
+          from { left: 0; } to { left: 100%; }
+        }
+
+        @-webkit-keyframes moveX2 {
+          from { left: 200px; } to { left: 100%; }
+        }
+        @-moz-keyframes moveX2 {
+          from { left: 200px; } to { left: 100%; }
+        }
+        @-o-keyframes moveX2 {
+          from { left: 200px; } to { left: 100%; }
+        }
+        @keyframes moveX2 {
+          from { left: 200px; } to { left: 100%; }
+        }
+
+        @-webkit-keyframes moveY {
+          from { top: 0; } to { top: 500px; }
+        }
+        @-moz-keyframes moveY {
+          from { top: 0; } to { top: 500px; }
+        }
+        @-o-keyframes moveY {
+          from { top: 0; } to { top: 500px; }
+        }
+        @keyframes moveY {
+          from { top: 0; } to { top: 500px; }
+        }

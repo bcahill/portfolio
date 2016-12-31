@@ -1,0 +1,92 @@
+header{
+    .right{
+
+        #nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; float: right; }
+        #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+          cursor: pointer;
+          border-radius: 1px;
+          height: 5px;
+          width: 35px;
+          background: #a973ad;
+          position: absolute;
+          display: block;
+          content: '';
+        }
+        #nav-toggle span:before {
+          top: -10px; 
+        }
+        #nav-toggle span:after {
+          bottom: -10px;
+        }
+
+        #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+          transition: all 500ms ease-in-out;
+        }
+        #nav-toggle.active span {
+          background-color: transparent;
+        }
+        #nav-toggle.active span:before, #nav-toggle.active span:after {
+          top: 0;
+          background: #fff;
+          z-index: 999999;
+        }
+        #nav-toggle.active span:before {
+          transform: rotate(45deg);
+        }
+        #nav-toggle.active span:after {
+          transform: rotate(-45deg);
+        }
+
+    }
+
+    .left{
+        .light-up{
+            color: #fbf420;
+            width: 50px;
+            height: 50px;
+            background: #a973ad;
+            border-radius: 0 50% 50% 50%;
+            display: block;
+            color: #fff;
+            text-decoration:none;
+            position: relative;
+
+            .brand{
+                position: absolute;     display: block;
+                color: #fff;
+                text-decoration:none;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: sans-serif; 
+            }
+
+        }
+
+        .light-up:hover{
+            background: #fbf420;
+        } 
+    }
+
+    .inner-nav{
+        width: 30%;
+        margin-left: 70%;
+        position: absolute;
+        top: 0;
+        background: #a973ad;
+        left: 500px;
+        z-index: 9999;
+       -webkit-transition: 0.3s ease-in-out;  /* Chrome 1-25, Safari 3.2+ */
+          -moz-transition: 0.3s ease-in-out;  /* Firefox 4-15 */
+            -o-transition: 0.3s ease-in-out;  /* Opera 10.50–12.00 */
+               transition: 0.3s ease-in-out;
+        border-radius: 50% 0 50% 50%;
+
+    }
+    .inner-nav.pizza{
+        display: block;
+        left: 0px;
+        z-index: 99999;
+    }
+
+}

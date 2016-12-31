@@ -5,6 +5,8 @@
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+@import "font-awesome/font-awesome";
+
 @import "common/global";
 @import "components/buttons";
 @import "components/comments";
@@ -15,7 +17,7 @@
 @import "layouts/sidebar";
 @import "layouts/footer";
 @import "layouts/pages";
-@import "layouts/posts";
+// @import "layouts/dots";
 @import "layouts/tinymce";
 
 @import "templates/home";
